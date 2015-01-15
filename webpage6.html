@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<base href="www.w3schools.com" target="_blank"></base>
+	<meta charset="utf-8"></meta>
+	<meta http-equiv="refresh" content="30"></meta>
+	<meta description="Hari's 6th HTML Web Page"></meta>
+	<meta name="author" content='Hari Sridhar'></meta>
+	<meta keywords="HTML, CSS, JavaScript, Hari, Sridhar">	
+	<title>Hari's 6th webpage</title>
+</head>
+
+<body>
+
+	<script type="text/javascript">
+		function onClick () {
+			document.getElementById('hashtag').innerHTML= "I have been clicked!";
+		}
+		function getTime () {
+			document.getElementById('time').innerHTML=Date();		
+		}
+	</script>
+
+
+
+	<h1>Intro</h1>
+	<p>Hello World! This is my 6th webpage in the lattest HTML installment!</p>
+	<iframe src="demo_iframe.htm" name="iframe_a" frameborder="0" width="400" height="400"></iframe>
+	<p><a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+	<form>
+		FirstName: <input type="text" name="firstName"><br />
+		Lastname: <input type="text" name="lastName"><br />
+		Password: <input type="password" name="password"><br />
+	</form>
+		<button type="button" onclick="onClick()">Click Me!</button>
+		<button type="button" onclick="getTime()">Get Date</button>
+	<p id="hashtag"></p>
+
+	<p>Now lets take a look at HTML symbols, entities</p>
+	<p>&#169, &reg &spades, &clubs, &hearts, &diams</p><br />
+		It's better to just look them up when needed, alongside URL Encoding</p>
+
+	<p id="time"></p>
+</body>
+
+</html>
